@@ -2,9 +2,12 @@ package myproject1.ash1.emergency.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class MyPagerAdapter(container: FragmentActivity,private val fragmentList: List<Fragment>) :FragmentStateAdapter(container){
+class MyPagerAdapter(container: FragmentManager,private val fragmentList: List<Fragment>,lifecycle: Lifecycle)
+    :FragmentStateAdapter(container,lifecycle){
 
     override fun getItemCount()=fragmentList.size
 

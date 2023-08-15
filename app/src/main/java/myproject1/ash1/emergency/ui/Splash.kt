@@ -17,7 +17,7 @@ class Splash : Fragment() {
     ): View? {
        val view=inflater.inflate(R.layout.fragment_splash,container,false)
           Handler(Looper.myLooper()!!).postDelayed({
-           findNavController().navigate(R.id.action_splash_to_emergencyCall)
+           findNavController().navigate(R.id.action_splash_to_onboarding)
           },1000)
         return view
     }
