@@ -1,4 +1,4 @@
-package myproject1.ash1.emergency
+package myproject1.ash1.emergency.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,13 +8,10 @@ import android.view.ViewGroup
 import me.relex.circleindicator.CircleIndicator3
 import myproject1.ash1.emergency.adapter.MyPagerAdapter
 import myproject1.ash1.emergency.databinding.FragmentOnboardingBinding
-import myproject1.ash1.emergency.ui.EmergencyCall
-import myproject1.ash1.emergency.ui.FirstAidKit
-import myproject1.ash1.emergency.ui.SocialMedia
+
 
 
 class Onboarding : Fragment() {
-
 lateinit var binding:FragmentOnboardingBinding
     val fragments= listOf(EmergencyCall(), FirstAidKit(), SocialMedia(),)
     override fun onCreateView(

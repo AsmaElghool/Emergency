@@ -2,7 +2,6 @@
     <string name="app_name">Emergency</string>
     <string name="skip">تخطي</string>
     <string name="font_hi">مرحبا بك في التطبيق</string>
-    <string name="font_onboarding">نحن هنا لمساعدتك في حالات الطوارئ\nابق على  اطلاع على جميع أرقام الطوارئ\nواحصل على الدعم بضغطة واحدة</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="font_onboarding">نحن هنا لمساعدتك في حالات الطوارئ ابق على \n اطلاع على جميع أرقام الطوارئ واحصل على\n الدعم بضغطة واحدة</string>
+
 </resources>
