@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "myproject1.ash1.emergency"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -32,6 +32,7 @@ android {
     buildFeatures{
         viewBinding=true
     }
+    namespace 'myproject1.ash1.emergency'
 }
 
 dependencies {

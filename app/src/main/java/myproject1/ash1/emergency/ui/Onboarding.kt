@@ -29,4 +29,5 @@ lateinit var binding:FragmentOnboardingBinding
         val indicator: CircleIndicator3 = binding.indicator
         indicator.setViewPager(binding.viewPager)
     }
+
 }

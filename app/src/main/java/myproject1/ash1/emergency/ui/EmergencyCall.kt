@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -13,7 +15,8 @@ import myproject1.ash1.emergency.databinding.FragmentEmergencyCallBinding
 
 
 class EmergencyCall : Fragment() {
-  lateinit var binding: FragmentEmergencyCallBinding
+    private lateinit var onBackPressedCallback: OnBackPressedCallback
+    lateinit var binding: FragmentEmergencyCallBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -29,8 +32,73 @@ class EmergencyCall : Fragment() {
                 viewPager?.currentItem=3
            }
            binding.nextBtn.setOnClickListener{
+             //  findNavController().popBackStack() // دي هتخليه يرجه للفراجمنت اللي قبله
                viewPager?.currentItem=1
            }
        }
+
+
+//    fun forBackStack(){
+//       var fm:FragmentManager  = getSupportFragmentManager()
+//    }
+
+
+
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        requireActivity().onBackPressedDispatcher.addCallback(
+//            viewLifecycleOwner,
+//            object : OnBackPressedCallback(true) {
+//                override fun handleOnBackPressed() {
+//                    requireActivity().finish()
+//                }
+//            }
+//        )
+//    }
+
+
+
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        onBackPressedCallback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                requireActivity().finish()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(
+            viewLifecycleOwner,
+            onBackPressedCallback
+        )
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        onBackPressedCallback.remove()
+    }
+
+//    private lateinit var onBackPressedCallback: OnBackPressedCallback
+//
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//
+//        onBackPressedCallback = object : OnBackPressedCallback(true) {
+//            override fun handleOnBackPressed() {
+//                requireActivity().finish() // Exit the app
+//            }
+//        }
+//
+//        requireActivity().onBackPressedDispatcher.addCallback(
+//            viewLifecycleOwner,
+//            onBackPressedCallback
+//        )
+//    }
+//
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        onBackPressedCallback.remove()
+//    }
+
 
 }
