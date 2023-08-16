@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgEmergancyCall"
-        android:layout_width="@dimen/_210sdp"
-        android:layout_height="@dimen/_230sdp"
+        android:layout_width="@dimen/_208sdp"
+        android:layout_height="@dimen/_232sdp"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_96sdp"
         android:layout_marginEnd="@dimen/_8sdp"
@@ -96,7 +96,7 @@
         style="@style/Main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_24sdp"
         android:gravity="center"
         android:text="@string/font_hi"
         app:layout_constraintEnd_toEndOf="parent"

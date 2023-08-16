@@ -1,14 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.FirstAidKit">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.FirstAidKit"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imgFirstAidKit"
+        android:layout_width="@dimen/_208sdp"
+        android:layout_height="@dimen/_232sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_96sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/first_aid_kit_bro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/_88sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_176sdp"
+        android:src="@drawable/line_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/curve_first_aidKit"
+        android:layout_width="@dimen/_72sdp"
+        android:layout_height="@dimen/_104sdp"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:src="@drawable/ellipse_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:src="@drawable/ic_brown"
+        android:layout_marginEnd="@dimen/_184sdp"
+        app:layout_constraintBottom_toTopOf="@+id/imgFirstAidKit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/curve_first_aidKit"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_216sdp"
+        android:src="@drawable/ic_greencircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_112sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:src="@drawable/ic_redcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first_aid_kit_ic_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/next_btn"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/change_btn"
+        android:src="@drawable/ic_nexticon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+        android:id="@+id/tv1"
+        style="@style/Main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:text="@string/tv1_first_aid_kit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFirstAidKit" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/Secondary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="@string/tv2_first_aid_kit"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginBottom="@dimen/_130sdp"
+        android:layout_marginBottom="@dimen/_100sdp"
         app:ci_drawable="@color/main_color"
         app:ci_drawable_unselected="@color/main_color"
         app:ci_gravity="center"
