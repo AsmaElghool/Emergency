@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Main_text">
+        <item name="android:textColor">@color/main_text</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/semibold</item>
+    </style>
+    <style name="Secondary_text">
+        <item name="android:textColor">@color/Secondary_text</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/semibold</item>
+    </style>
+    <style name="Text_button">
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/cairo</item>
+    </style>
+    <style name="Text_1">
+        <item name="android:textColor">@color/Secondary_text</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/semibold</item>
+    </style>
+    <style name="Text_2">
+        <item name="android:textColor">@color/Secondary_text</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/semibold</item>
+    </style>
+
+</resources>
