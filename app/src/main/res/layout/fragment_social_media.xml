@@ -3,12 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.SocialMedia">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imgSocialMedia"
+        android:layout_width="@dimen/_208sdp"
+        android:layout_height="@dimen/_232sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/social_media_bro__1__1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+        android:id="@+id/tv1_social"
+        style="@style/Main_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_280sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:gravity="center"
+        android:text="@string/tv1_Social_Media"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSocialMedia"
+        />
+    <TextView
+        android:id="@+id/tv2_Social"
+        style="@style/Secondary_text"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_310sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:gravity="center"
+        android:text="@string/tv2_Social_Media"
+        android:textAlignment="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1_social" />
+    <ImageView
+        android:id="@+id/SocialMedia_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_270sdp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_Social"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_480sdp"
+        android:text="@string/btn_Social_Media"
+        android:layout_marginLeft="@dimen/_30sdp"
+        />
 </FrameLayout>

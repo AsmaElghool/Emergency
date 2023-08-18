@@ -7,5 +7,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tv2_first_aid_kit">لديك مجموعة شاملة من الإسعافات الأولية\n وكيفية تجهيز محيطك للطوارئ لتضمن سلامة\n نفسك وأحبائك</string>
     <string name="tv1_first_aid_kit">إسعافات أولية وإرشادات</string>
+     <!-- social media-->
+    <string name="tv1_Social_Media">منتدي تجارب المستخدمين</string>
+    <string name="tv2_Social_Media"> تود مشاركة تجاربك؟ يسعدنا انضمامك الي مجتمع الطوارئ لتكن جزءا من شبكه دعم قويه</string>
+    <string name="btn_Social_Media">ابدا الان </string>
 
 </resources>

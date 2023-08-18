@@ -1,5 +1,6 @@
 package myproject1.ash1.emergency.ui
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -11,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import myproject1.ash1.emergency.R
 
 class Splash : Fragment() {
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
